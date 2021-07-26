@@ -12,7 +12,7 @@ import {
 } from "@ant-design/icons";
 
 export default function Home(props) {
-  console.log(props.mixitup);
+  console.log(props.footer);
 
   return (
     <div className={styles.container}>
@@ -34,7 +34,7 @@ export default function Home(props) {
         DRUNK ELEPHANT
       </NavBar>
 
-      <article style={{ backgroundColor: "#ffffff" }}>
+      <article style={{ backgroundColor: "#a3d4ca" }}>
         {/* first section starts here */}
         <div
           style={{
@@ -87,7 +87,8 @@ export default function Home(props) {
               style={{
                 textAlign: "left",
                 height: "100%",
-                paddingBottom: "20px",
+                paddingBottom: "1px",
+                paddingTop: '2em'
               }}
             >
               <h1 style={{ marginLeft: "1em" }}>{props.proTips.text}</h1>
@@ -128,16 +129,226 @@ export default function Home(props) {
         {/* second section starts here */}
 
         {/* third section starts here */}
-        <div style={{ backgroundColor: "#e4f3fb", height: '100vh' }}>
+        <div style={{ backgroundColor: "#e4f3fb", height: "75vh" }}>
           <img
-            style={{ marginLeft: "2em" }}
+            style={{
+              marginLeft: "10em",
+              alignItems: "center",
+              paddingTop: "25px",
+            }}
             // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
             src={`http://localhost:1337${props.mixitup.mixituplogo.url}`}
             alt="new"
           />{" "}
+          <section>
+            <p style={{ marginLeft: "3em", marginRight: "5em" }}>
+              <span
+                style={{
+                  color: "#FF8B6A",
+                  fontSize: "18px",
+                  lineHeight: "23px",
+                  fontFamily: "AVENIR",
+                  alignContent: "left",
+                  // textAlign: "left",
+                }}
+              >
+                {props.mixitup.sometextpara}
+              </span>
+            </p>
+            <img
+              style={{
+                marginLeft: "2em",
+                alignItems: "center",
+                paddingTop: "25px",
+              }}
+              // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+              src={`http://localhost:1337${props.mixitup.featuredsmoothieimage.url}`}
+              alt="new"
+            />{" "}
+            <img
+              style={{
+                width: "-webkit-fill-available",
+                alignItems: "center",
+                paddingTop: "25px",
+              }}
+              // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+              src={`http://localhost:1337${props.mixitup.timelogos.url}`}
+              alt="new"
+            />{" "}
+          </section>
         </div>
 
         {/* third section ends here */}
+
+        {/* fourth section starts here */}
+        {/* Sunshine Smoothie Starts Here */}
+        <div
+          style={{
+            paddingTop: "4em",
+            paddingLeft: "2em",
+            backgroundColor: '#ffffff'
+          }}
+        >
+          <div className="image">
+            <img
+              src={`http://localhost:1337${props.smoothie.smoothieborder.url}`}
+              alt="new"
+            />
+            <div
+              className="sunshine-text"
+              style={{
+                position: "absolute",
+                top: "229%",
+                width: "100%",
+                color: "black",
+                fontSize: "22px",
+              }}
+            >
+              <p style={{ marginLeft: "2em" }}>Sunshine Smoothie</p>
+              <img
+                style={{ marginLeft: "4em" }}
+                src={`http://localhost:1337${props.smoothie.product1.url}`}
+                alt="new"
+              />
+              <br></br>
+              <img
+                src={`http://localhost:1337${props.smoothie.product2.url}`}
+                alt="new"
+              />
+              <br></br>
+              <img
+                style={{ marginLeft: "4em" }}
+                src={`http://localhost:1337${props.smoothie.product3.url}`}
+                alt="new"
+              />
+              <br></br>
+              <img
+                src={`http://localhost:1337${props.smoothie.product2.url}`}
+                alt="new"
+              />
+              <br></br>
+              <img
+                style={{ marginLeft: "4em" }}
+                src={`http://localhost:1337${props.smoothie.product1.url}`}
+                alt="new"
+              />
+            </div>
+          </div>
+
+          <p
+            style={{
+              margin: "10% 10% 10% 10%",
+              fontFamily: "brown",
+              fontSize: "16px",
+              fontStyle: "Bold",
+              fontWeight: "700",
+            }}
+          >
+            FOR FIRMER, BRONZY, GLOWING SKIN
+          </p>
+          <WingBlank style={{ paddingBottom: "30px" }}>
+            <Button
+              style={{
+                backgroundColor: "#d59363",
+                color: "#fdfaf8",
+                marginLeft: "12%",
+                marginRight: "19%",
+              }}
+            >
+              SHOP THIS SMOOTHIE
+            </Button>
+            <WhiteSpace />
+          </WingBlank>
+        </div>
+        {/* Sunshine Smoothie Ends Here */}
+        {/* fourth section ends here */}
+        {/* footer starts here */}
+        <div style={{ backgroundColor: "#4b4b4b" }}>
+          <img
+            style={{ width: "100%" }}
+            // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+            src={`http://localhost:1337${props.footer.drunkelephantlogo.url}`}
+            alt="new"
+          />{" "}
+          <div style={{ color: "white", textAlign: "center" }}>
+            <p>JOIN OUR MAILING LIST</p>
+            <p>WHAT CAN WE HELP YOU FIND?</p>
+            <p>CONTACT</p>
+            <p>OUR STORY</p>
+            <p>PRESS</p>
+            <p>VIDEOS</p>
+            <p>STORES</p>
+            <p>FAQ</p>
+            <p>DELIVERY & RETURNS</p>
+            <p>REVIEWS</p>
+            <p>AFTERPAY</p>
+            <p>ACCESSIBILITY</p>
+          </div>
+          <img
+            style={{ width: "100%" }}
+            // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+            src={`http://localhost:1337${props.footer.connectwithus.url}`}
+            alt="new"
+          />{" "}
+        </div>
+
+        <div style={{ width: "100%", backgroundColor: "#cd56bb" }}>
+          <div
+            style={{
+              width: "32%",
+              display: "inline-block",
+              textAlign: "center",
+            }}
+          >
+            <img
+              style={{ width: "100%" }}
+              // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+              src={`http://localhost:1337${props.footer.footericon1.url}`}
+              alt="new"
+            />{" "}
+            {/* <img
+                    src={GetStarted}
+                    className="GetStarted"
+                    alt="GetStarted"
+                    style={{ marginBottom: "16px" }}
+                  /> */}
+          </div>
+
+          <div
+            style={{
+              width: "32%",
+              display: "inline-block",
+              textAlign: "center",
+            }}
+          >
+            {/* <Link to="/JoinClub"> */}
+            <img
+              style={{ width: "100%" }}
+              // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+              src={`http://localhost:1337${props.footer.footericon2.url}`}
+              alt="new"
+            />{" "}
+            {/* </Link> */}
+          </div>
+
+          <div
+            style={{
+              width: "32%",
+              display: "inline-block",
+              textAlign: "center",
+            }}
+          >
+            {/* <Link to="/ShareLove"> */}
+            <img
+              style={{ width: "100%" }}
+              // uploads/Drunk_Elephant_Logo_e75c1f076d.png",
+              src={`http://localhost:1337${props.footer.footericon3.url}`}
+              alt="new"
+            />{" "}
+            {/* </Link> */}
+          </div>
+        </div>
+        {/* footer ends here  */}
       </article>
     </div>
   );
@@ -153,7 +364,14 @@ export async function getServerSideProps(context) {
 
   const res2 = await fetch("http://localhost:1337/mixitup");
   const mixitup = await res2.json();
+
+  const res3 = await fetch("http://localhost:1337/smoothie");
+  const smoothie = await res3.json();
+
+  const res4 = await fetch("http://localhost:1337/footer");
+  const footer = await res4.json();
+
   return {
-    props: { data, proTips, mixitup }, // will be passed to the page component as props
+    props: { data, proTips, mixitup, smoothie, footer }, // will be passed to the page component as props
   };
 }
